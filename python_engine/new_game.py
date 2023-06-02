@@ -30,4 +30,9 @@ class block:
     else:
       warn(0)
   def bdlist(self,bd="all"):
-    pass
+    t=int(self.t_b)
+    r=int(self.r_b)
+    b=int(self.b_b)
+    l=int(self.l_b)
+    if bd == "all":
+      return [t,r,b,l]
