@@ -1,4 +1,4 @@
-class block:
+class Block:
     t_b=False
     r_b=False
     b_b=False
