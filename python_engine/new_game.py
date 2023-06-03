@@ -45,6 +45,6 @@ class Block:
         elif side == "left":
             return left
 
-def BlockBox:
+class BlockBox:
     a=1
     
