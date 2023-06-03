@@ -3,7 +3,7 @@ A New Game
 For learning
 Class
 """
-
+int("a")
 
 class Block:
     """
@@ -65,7 +65,8 @@ class Block:
         elif border == "left":
             return left
         else:
-            warn(1)
+            #warn(1)
+            pass
 
 def warn(code):
     """
