@@ -3,10 +3,10 @@ class Block:
     r_b=False
     b_b=False
     l_b=False
-    nane=""
+    loca=""
     def __init__(self,loca):
-        self.name=loca
-    def chbd(self,side):
+        self.loca=loca
+    def chside(self,side):
         if side == "top":
             if self.t_b:
                 self.t_b=True
@@ -29,16 +29,22 @@ class Block:
                 self.l_b=False
         else:
             warn(0)
-    def bdlist(self,bd="all"):
-        t=int(self.t_b)
-        r=int(self.r_b)
-        b=int(self.b_b)
-        l=int(self.l_b)
-        if bd == "all":
-            return [t,r,b,l]
-        elif bd == "top":
-            return t
-        elif bd == "right":
-            return r
-        elif bd == "bottom":
-            return b
+    def border_list(self,side="all"):
+        top=int(self.t_b)
+        right=int(self.r_b)
+        bottom=int(self.b_b)
+        left=int(self.l_b)
+        if side == "all":
+            return [top,right,bottom,left]
+        elif side == "top":
+            return top
+        elif side == "right":
+            return right
+        elif side == "bottom":
+            return bottom
+        elif side == "left":
+            return left
+
+def BlockBox:
+    a=1
+    
