@@ -93,6 +93,13 @@ class BlockBox:
         for i in range(x_len):
             for j in range(y_len):
                 self.a.append(Block(str(i+1)+str(j+1)))
-
+    def choose_block(self,x_loca,y_loca):
+        """
+        provide API
+        to operate
+        Block
+        """
+        pass
 #test
 test=BlockBox()
+print(test.a)
