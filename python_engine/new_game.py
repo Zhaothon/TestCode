@@ -107,5 +107,11 @@ class BlockBox:
         else:
             counter+=1
     return None
-    def choose_blocks(self,x_start=1,x_end=self.x_size,y_start=1,y_end=self.y_size):                    """                                             based on                                        'choose_block':                                 choose many blocks                              """                                             pass
+    def choose_blocks(self,x_start=1,x_end=self.x_size,y_start=1,y_end=self.y_size):
+    """
+    based on
+    'choose_block':
+    choose many blocks
+    """
+    pass
 
