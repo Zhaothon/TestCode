@@ -113,5 +113,6 @@ class BlockBox:
     'choose_block':
     choose many blocks
     """
-    pass
-
+    for i in range(x_end):
+        if i >= x_start:
+            pass
