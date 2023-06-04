@@ -1,16 +1,10 @@
-# HTML_practice
+# PtythonTest
 
 ---
 
-A practice space and experiment station for HTML
+A practice space and experiment station for python
 
----
 
-+ Elements
-+ Events
-+ Arguments
-+ Javascripts
-+ CSS
 
 ---
 
