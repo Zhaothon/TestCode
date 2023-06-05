@@ -3,7 +3,6 @@ A New Game
 For learning
 Class
 """
-int("a")
 
 class Block:
     """
