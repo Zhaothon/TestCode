@@ -1,6 +1,4 @@
-# PtythonTest
-
----
+# PythonTest
 
 A practice space and experiment station for python
 
@@ -8,8 +6,6 @@ A practice space and experiment station for python
 
 # First trial
 
-Make a pakage
+Make a package
 
----
 
-That's all
