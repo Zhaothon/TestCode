@@ -105,6 +105,7 @@ class BlockBox:
             return self.block_group[counter]
         else:
             counter+=1
+    del i
     return None
     def choose_blocks(self,x_start=1,x_end=self.x_size,y_start=1,y_end=self.y_size):
     """
