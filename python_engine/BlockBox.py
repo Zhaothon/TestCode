@@ -18,10 +18,6 @@ class Block:
     def __init__(self,loca_x,loca_y):
         m=[loca_x,loca_y]
         self.loca=m
-        #previous:
-        #self.loca.append(loca_x)
-        #self.loca.append(loca_y)
-        #that's the root of problem
         del m
     def chbd(self,side):
         """
@@ -94,40 +90,12 @@ class BlockBox:
     size_x=0
     size_y=0
     def __init__(self,x_len=5,y_len=5):
-        """
-        have problem:
-        why each Block in
-        BlockBox has the same
-        ID?
-        """
         self.size_x=x_len
         self.size_y=y_len
         for i in range(x_len):
             for j in range(y_len):
                 self.block_group.append(Block(i+1,j+1))
                 self.block_name.append([i+1,j+1])
-        #comparetion for debbug
-        """
-        class test:
-            lis=[]
-            ...
-            def __init__(self,*numbers):
-                ...
-                self.lis=list(numbers)#the key!
-                ...
-            ...
-
-        a=[]
-        for i in range(10):
-            for j in range(10):
-                a.append(test(i,j))
-            print(a[i].lis)
-        #successful
-        """
-        #testpoint:
-        #print(id(self.block_group[i].loca))
-        #print(self.block_group[0].loca)
-        #end test!
         del i,j
 
     def choose_block(self,x_loca,y_loca):
@@ -175,26 +143,3 @@ class BlockBox:
             returns.append(self.choose_block(i[0],i[1]))
         del i,targets
         return returns
-#testpoint-3
-"""
-test=BlockBox(1,1)
-print(test.block_group)
-"""
-#testpoint-2
-
-test=BlockBox(2,2)
-a=test.choose_blocks(int(input("x_start:")),int(input("x_end:")),int(input("y_start:")),int(input("y_end:")))
-print(a[0].loca)
-#print(i)
-
-#del i
-
-#testpoint-1
-'''
-test=BlockBox()
-for i in range(25):
-    print(test.block_name[i]+":"+str(test.block_group[i]))
-target=test.choose_block(input("x:"),input("y:"))
-print(target,target.loca)
-'''
-
