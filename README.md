@@ -1,4 +1,4 @@
-# [PythonTest][www.github.com/Zhaothon/TestCode/]
+# [PythonTest] www.github.com/Zhaothon/TestCode/
 
 A practice space and experiment station for python
 
