@@ -3,6 +3,12 @@ A New Game
 For learning
 Class
 """
+class Loca:
+    x=0
+    y=0
+    def __init__(self,m=0,n=0):
+        self.x=m
+        self.y=n
 
 class Block:
     """
