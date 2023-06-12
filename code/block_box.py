@@ -5,11 +5,10 @@ class Loca:
     """
     用于描述位置
     """
-    x_loca=0
-    y_loca=0
+    x_y=[]
     def __init__(self,new_x=0,new_y=0):
-        self.x_loca=new_x
-        self.y_loca=new_y
+        self.x_y[0]=new_x
+        self.x_y[1]=new_y
 
 class Block:
     """
@@ -39,9 +38,8 @@ def warn(code):
 
 class BlockBox:
     """
-    base game object:
-    BlockBox
-    just like a map
+    网格模型的框架：
+    提供了批量操作网格的工具
     """
     block_group=[]
     block_name=[]
@@ -59,22 +57,19 @@ class BlockBox:
         for k in locas:
             self.block_group.append(Block(k))
 
-    def choose_block(self,x_loca,y_loca):
+    def choose_block(self,loca=Loca(1,1)):
         """
-        provide API
-        to operate
-        Block
+        用于选定网格，
+        便于后续操作
         """
         counter=0
         for i in self.block_name:
-            if i[0] == x_loca:
-                if i[1] == y_loca:
-                    return self.block_group[counter]
-                else:
-                    counter+=1
+            if i == loca.x_y
+                return self.block_group[counter]
             else:
                 counter+=1
         return None
+
     def choose_blocks(self,x_start,x_end,y_start,y_end):
         """
         based on 
