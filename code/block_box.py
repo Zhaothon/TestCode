@@ -64,7 +64,7 @@ class BlockBox:
         """
         counter=0
         for i in self.block_name:
-            if i == loca.x_y
+            if i == loca.x_y:
                 return self.block_group[counter]
             else:
                 counter+=1
