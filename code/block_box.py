@@ -69,13 +69,11 @@ class BlockBox:
             else:
                 counter+=1
         return None
-
+"""
     def choose_blocks(self,x_start,x_end,y_start,y_end):
-        """
         based on 
         'choose_block':
         choose many blocks
-        """
         target_x=[]
         target_y=[]
         targets=[]
@@ -97,5 +95,7 @@ class BlockBox:
         del target_x,target_y
         for k in targets:
             returns.append(self.choose_block(k[0],k[1]))
+
         del targets
         return returns
+"""
