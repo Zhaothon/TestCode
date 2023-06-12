@@ -92,8 +92,8 @@ class BlockBox:
         for i in target_x:
             for j in target_y:
                 targets.append([i,j])
-        del i,j,target_x,target_y
-        for i in targets:
-            returns.append(self.choose_block(i[0],i[1]))
-        del i,targets
+        del target_x,target_y
+        for k in targets:
+            returns.append(self.choose_block(k[0],k[1]))
+        del targets
         return returns
