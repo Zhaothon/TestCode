@@ -1,11 +1,9 @@
 """
-A New Game
-For learning
-Class
+一个用于游戏的网格模型
 """
 class Loca:
     """
-    
+    用于描述位置
     """
     x_loca=0
     y_loca=0
@@ -15,9 +13,7 @@ class Loca:
 
 class Block:
     """
-    base game object:
-    Block
-    Just like a square in a map
+    用于描述并更改网格状态
     """
     filled=False
     loca=Loca(1,1)
