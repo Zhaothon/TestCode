@@ -4,11 +4,14 @@ For learning
 Class
 """
 class Loca:
-    x=0
-    y=0
-    def __init__(self,m=0,n=0):
-        self.x=m
-        self.y=n
+    """
+    
+    """
+    x_loca=0
+    y_loca=0
+    def __init__(self,new_x=0,new_y=0):
+        self.x_loca=new_x
+        self.y_loca=new_y
 
 class Block:
     """
@@ -18,11 +21,16 @@ class Block:
     """
     filled=False
     loca=Loca(1,1)
-    def __init__(self,loca,fill=False):
+    def __init__(self,loca=Loca(0,0),fill=False):
         self.loca=loca
         self.filled=fill
     def fill_status(self):
+        """
+        whether a Block
+        is full
+        """
         return self.filled
+
 def warn(code):
     """
     warn programmer to
@@ -46,11 +54,14 @@ class BlockBox:
     def __init__(self,x_len=5,y_len=5):
         self.size_x=x_len
         self.size_y=y_len
+        locas=[]
         for i in range(x_len):
             for j in range(y_len):
-                self.block_group.append(Block(i+1,j+1))
+                locas.append(Loca(i+1,j+1))
                 self.block_name.append([i+1,j+1])
         del i,j
+        for k in locas:
+            self.block_group.append(Block(k))
 
     def choose_block(self,x_loca,y_loca):
         """
